@@ -4089,6 +4089,29 @@ input[type="submit"].btn-block {
 .navbar-brand:hover {
   text-decoration: none;
 }
+
+/* Define the keyframes for the flashing animation */
+@keyframes flashing {
+  0% {
+    color: lightblue; /* Start with one color (e.g., red) */
+    text-decoration: underline;
+  }
+  50% {
+    color: pink; /* Switch to another color (e.g., blue) halfway through */
+    text-decoration: none;
+  }
+  100% {
+    color: orange; /* Return to the original color */
+    text-decoration: underline;
+  }
+}
+
+/* Apply the animation to the flashing-text class */
+.flashing-text {
+  animation: flashing 2s linear infinite; /* Change '2s' to adjust the animation speed */
+}
+
+
 .navbar-nav {
   display: -ms-flexbox;
   display: flex;
